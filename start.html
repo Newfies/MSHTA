@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>RUNNING MSHTA</title>
+    </head>
+    <body>
+        <script language="VBScript">
+            Sub Window_OnLoad()
+                Dim WshShell
+                Set WshShell = CreateObject("WScript.Shell")
+                WshShell.Run "cmd /c echo MSHTA works", 0, True
+            End Sub
+        </script>
+    </body>
+</html>
